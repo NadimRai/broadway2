@@ -34,6 +34,8 @@ class ReviewsController < ApplicationController
 		redirect_to play_path(@play)
 	end
 
+	private
+
 	def review_params
 			params.require(:review).permit(:rating, :comment)
 		end
