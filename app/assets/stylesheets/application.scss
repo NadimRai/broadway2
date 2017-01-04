@@ -24,9 +24,68 @@
 	padding: 0.6em 0.6em;
 }
 
+.links {
+
+	.btn-custom {
+		padding: 3px 10px;
+		font-weight: 300;
+	}
+
+}
+
+
 .play {
 	height: 350px;
 	width: 250px;
 	margin-bottom: 40px;
 	@include background-tile;
+}
+
+.play-show {
+	height: 475px;
+	width: 325px;
+	@include background-tile;
+}
+
+.play-info {
+	@include background-tile;
+
+	.play-title {
+		margin-top: 0;
+		font-size: 4em;
+		font-weight: bold;
+	}
+	.play-director {
+		font-size: 1.5em;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-style: italic;
+		font-weight: lighter;
+		span {
+			font-size: 0.80em;
+		}	
+	}
+
+	.play-desc {
+		font-size: 1.05em;
+		line-height: 1.5;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+}
+
+.btn-custom {
+	color: darken(#bdbdbd, 5%);
+	background-color: #fff;
+	border: 1px solid darken(#bdbdbd, 5%);
+	padding: 8px 20px;
+	border-radius: 0px;
+	font-family: 'Lato', sans-serif;
+	&:hover {
+		text-decoration: none;
+		background-color: darken(#bdbdbd, 5%);
+		color: #fff;
+		transition: 0.5s;
+	}
 }
